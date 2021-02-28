@@ -24,6 +24,6 @@ dag = DAG(
 
 git_pull = BashOperator(
     task_id='git_pull',
-    bash_command='git -C /root/airflow/dags/ pull',
+    bash_command='git -C /root/airflow/dags/module-3-airflow pull',
     dag=dag,
 )
